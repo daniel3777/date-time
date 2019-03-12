@@ -1,0 +1,18 @@
+.cdk-overlay-container {
+    z-index: 1100;
+  
+    .owl-dt-calendar-table {
+      .owl-dt-calendar-cell-selected {
+        background-color: var(--main-bg-color);
+      }
+    }
+  
+    .owl-dt-container-buttons {
+      color: var(--main-bg-color);
+    }
+  }
+  
+  .data-range-input.form-control.m-input {
+    min-width: 200px;
+  }
+  

@@ -1,0 +1,21 @@
+<div class="m-nav__item m-form">
+    <div class="m-form__group m-form__group--inline w-100">
+      <label class="m-form__label">{{ 'Date Range'}}:</label>
+      <input
+        [max]="allowFuture ? null : today"
+        selectMode="range"
+        rangeSeparator="-"
+        [(ngModel)]="dateRange"
+        class="form-control m-input data-range-input"
+        [owlDateTime]="dateTimePicker"
+        [owlDateTimeTrigger]="dateTimePicker"
+        placeholder="{{ 'Select date range'}}">
+      <owl-date-time
+        #dateTimePicker
+        pickerType="calendar"
+        firstDayOfWeek="1"
+        (afterPickerClosed)="selectRange()">
+      </owl-date-time>
+    </div>
+  </div>
+  
